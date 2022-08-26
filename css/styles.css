@@ -33,6 +33,7 @@ h1 {
   grid-template-columns: auto auto auto;
   margin-left: 0px;
   margin-right: 0px;
+  border-bottom: #130000 solid;
 }
 
 a {
@@ -47,17 +48,22 @@ a {
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
+.sidebar {
+  display: none;
+}
+
 #movies {
   display: flex;
   color: #130000;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .thumbnail-movie {
   background-color: white;
   border: black solid;
   border-radius: 10px;
-  width: 330px;
+  width: 300px;
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -69,6 +75,15 @@ h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+h3 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 5px;
+  margin-left: 5px;
 }
 
 .movie-info-list {
@@ -134,4 +149,69 @@ button {
 
 .return-button {
   font-size: 15px;
+}
+
+@media only screen and (min-width: 401px) {
+  body {
+    background-color: blue;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+  .menu-item {
+    font-size: 25px;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+  .movie-cover-small {
+    width: 150px;
+  }
+
+  .movie-info-text {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 25px;
+  }
+
+  .by-ticket-button {
+    font-size: 25px;
+  }
+
+  .movie-info-list {
+    font-size: 25px;
+  }
+
+  .return-button {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 821px) {
+  body {
+    background-color: green;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .sidebar {
+    display: block;
+    background-color: #660000;
+    min-width: 200px;
+  }
+
+  .sidebar p {
+    text-align: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .movie-cover-small {
+    width: 200px;
+  }
 }
