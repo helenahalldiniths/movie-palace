@@ -103,6 +103,7 @@ h2 {
 .movie-info-text {
   margin-left: 10px;
   margin-right: 10px;
+  font-size: 15px;
 }
 
 .movie-info-and-image .movie-info-list {
@@ -112,4 +113,25 @@ h2 {
   align-items: center;
   margin-bottom: 0px;
   text-align: center;
+}
+
+button {
+  background-color: #b30000;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 5px;
+  margin: 5px;
+}
+
+.by-ticket-div {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.by-ticket-button {
+  font-size: 20px;
+}
+
+.return-button {
+  font-size: 15px;
 }
