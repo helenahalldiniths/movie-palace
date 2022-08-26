@@ -35,6 +35,11 @@ h1 {
   margin-right: 0px;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .menu-item {
   padding: 5px;
   color: #130000;
@@ -81,4 +86,30 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+}
+
+.movie-info-and-image {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+.movie-cover-small {
+  width: 100px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.movie-info-text {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.movie-info-and-image .movie-info-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  text-align: center;
 }
