@@ -57,6 +57,9 @@ a {
   display: flex;
   color: #130000;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 15px 15px;
 }
 
 .thumbnail-movie {
@@ -65,8 +68,8 @@ a {
   border-radius: 10px;
   width: 300px;
   margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto;
+  margin-right: auto;*/
 }
 
 h2 {
@@ -141,8 +144,8 @@ button {
 .by-ticket-div {
   position: absolute;
   right: 5px;
-  bottom: 5px;
 }
+
 .by-ticket-button {
   font-size: 20px;
 }
@@ -153,7 +156,7 @@ button {
 
 @media only screen and (min-width: 401px) {
   body {
-    background-color: blue;
+    /* background-color: blue;*/
   }
 
   h1 {
@@ -180,8 +183,8 @@ button {
     font-size: 25px;
   }
 
-  .movie-info-list {
-    font-size: 25px;
+  .movie-info-and-image .movie-info-list {
+    font-size: 20px;
   }
 
   .return-button {
@@ -191,7 +194,7 @@ button {
 
 @media only screen and (min-width: 821px) {
   body {
-    background-color: green;
+    /*background-color: green;*/
   }
 
   .main {
@@ -213,5 +216,15 @@ button {
 
   .movie-cover-small {
     width: 200px;
+  }
+
+  .movie-info-image-and-text {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .movie-info-and-image {
+    grid-template-columns: auto;
+    margin-left: 10px;
   }
 }
