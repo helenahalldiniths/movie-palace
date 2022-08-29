@@ -136,7 +136,7 @@ h3 {
 button {
   background-color: #b30000;
   color: white;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 5px;
   margin: 5px;
 }
@@ -211,8 +211,8 @@ button {
 
   .sidebar p {
     text-align: center;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 15px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
   .movie-cover-small {
