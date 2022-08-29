@@ -206,6 +206,7 @@ button {
     display: block;
     background-color: #660000;
     min-width: 200px;
+    max-width: 300px;
   }
 
   .sidebar p {
