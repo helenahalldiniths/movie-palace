@@ -2,73 +2,23 @@
   "movies": [
     {
       "title": "Elvis",
-      "ageLimit": 11,
-      "shows": [
-        {
-          "date": "2022-09-10",
-          "time": "20:00"
-        },
-        {
-          "date": "2022-09-11",
-          "time": "20:00"
-        }
-      ]
+      "ageLimit": 11
     },
     {
       "title": "Beast",
-      "ageLimit": 15,
-      "shows": [
-        {
-          "date": "2022-09-09",
-          "time": "21:00"
-        },
-        {
-          "date": "2022-09-12",
-          "time": "19:00"
-        }
-      ]
+      "ageLimit": 15
     },
     {
       "title": "After ever happy",
-      "ageLimit": 11,
-      "shows": [
-        {
-          "date": "2022-09-09",
-          "time": "19:00"
-        },
-        {
-          "date": "2022-09-10",
-          "time": "20:00"
-        }
-      ]
+      "ageLimit": 11
     },
     {
       "title": "Där kräftorna sjunger",
-      "ageLimit": 11,
-      "shows": [
-        {
-          "date": "2022-09-10",
-          "time": "18:00"
-        },
-        {
-          "date": "2022-09-12",
-          "time": "20:00"
-        }
-      ]
+      "ageLimit": 11
     },
     {
       "title": "Downton Abbey: en ny era",
-      "ageLimit": 0,
-      "shows": [
-        {
-          "date": "2022-09-10",
-          "time": "12:00"
-        },
-        {
-          "date": "2022-09-11",
-          "time": "17:00"
-        }
-      ]
+      "ageLimit": 0
     }
   ]
 }

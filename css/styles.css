@@ -133,12 +133,15 @@ h3 {
   text-align: center;
 }
 
-button {
-  background-color: #b30000;
+button,
+#save-button {
+  background-color: #660000;
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 5px;
   margin: 5px;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
 .by-ticket-div {
@@ -146,12 +149,21 @@ button {
   right: 5px;
 }
 
-.by-ticket-button {
+#info-age-limit,
+#buy-tickets {
+  background-color: white;
+  color: black;
+  margin: 10px;
+  padding: 10px;
   font-size: 20px;
 }
 
-.return-button {
-  font-size: 15px;
+#age-limit {
+  font-size: 25px;
+}
+
+#film-titles {
+  font-size: 35px;
 }
 
 @media only screen and (min-width: 401px) {

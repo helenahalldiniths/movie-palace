@@ -20,7 +20,10 @@ function createForm(moviesAsObjects) {
     console.log("moviesAsObjects[i].title", moviesAsObjects[i].title);
     movies.push(moviesAsObjects[i].title);
   }
+  createSelectMovieTitle(movies);
+}
 
+function createSelectMovieTitle(movies) {
   let select = document.createElement("select");
   select.name = "film-titles";
   select.id = "film-titles";
