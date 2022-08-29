@@ -1,15 +1,26 @@
-let movies = [
-  "Elvis",
-  "Beast",
-  "After ever happy",
-  "Där kräftorna sjunger",
-  "Downton Abbey:En ny era",
-];
-
 function showMovies(event) {
   event.preventDefault();
-  let age = retrieveAgeLimit();
-  console.log(age);
+
+  let moviesAsObjects = [];
+  fetch("../json/movies.json")
+    .then((response) => response.json())
+    .then((data) => {
+      for (let i = 0; i < data.movies.length; i++) {
+        if (data.movies[i].ageLimit <= retrieveAgeLimit()) {
+          moviesAsObjects.push(data.movies[i]);
+        }
+      }
+      createForm(moviesAsObjects);
+    });
+}
+
+function createForm(moviesAsObjects) {
+  let movies = [];
+  for (let i = 0; i < moviesAsObjects.length; i++) {
+    console.log("moviesAsObjects[i].title", moviesAsObjects[i].title);
+    movies.push(moviesAsObjects[i].title);
+  }
+
   let select = document.createElement("select");
   select.name = "film-titles";
   select.id = "film-titles";
