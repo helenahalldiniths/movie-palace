@@ -121,10 +121,12 @@ function showOrder(event) {
   let title = document.querySelector("#film-titles").value;
   let showtime = document.querySelector("#shows").value;
   let amoutOfTickets = document.querySelector("#amount-tickets").value;
-  alert(
-    `Du har köpt ${amoutOfTickets} biljetter till filmen "${title}" med visningstid ${showtime}`
-  );
-  window.location.replace("../index.html");
+
+  sessionStorage.setItem("title", title);
+  sessionStorage.setItem("showtime", showtime);
+  sessionStorage.setItem("amoutOfTickets", amoutOfTickets);
+
+  window.location.replace("../ticketconfirmation.html");
 }
 
 document
