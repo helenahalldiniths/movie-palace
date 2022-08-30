@@ -9,17 +9,17 @@
   </head>
   <body>
     <header>
-      <h1>Movie Palace</h1>
+      <h1>HELENAS HYRFILMER</h1>
     </header>
     <div id="menu">
-      <div class="menu-item">
+      <div class="menu-item" id="menu-item-home">
         <a href="index.html">HEM</a>
       </div>
       <div class="menu-item">
         <a href="tickets.html">BILJETTER</a>
       </div>
-      <div class="menu-item">
-        <a href="agelimit.html">ANGE ÅLDERSGRÄNS</a>
+      <div class="menu-item" id="menu-item-agelimit">
+        <a href="agelimit.html">ÅLDERSGRÄNS</a>
       </div>
     </div>
     <article id="buy-tickets">
@@ -32,7 +32,22 @@
         filmer.
         <button id="accept-terms-button">OK</button>
       </p>
-      <div id="container"></div>
+      <form id="ticketForm">
+        <div id="container"></div>
+        <div id="containerForShows"></div>
+        <label for="amount-tickets" id="amount-tickets-label"
+          >Antal biljetter:</label
+        >
+        <input
+          type="number"
+          id="amount-tickets"
+          name="amount-tickets"
+          max="9"
+          min="0"
+          required
+        /><br /><br />
+        <input type="submit" value="Köp" id="get-tickets-button" />
+      </form>
     </article>
     <script src="js/tickets.js"></script>
   </body>
