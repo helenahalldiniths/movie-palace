@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv-se">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Palace</title>
+    <title>HELENAS HYRFILMER</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>HELENAS HYRFILMER</h1>
+    </header>
+    <div id="menu">
+      <div class="menu-item" id="menu-item-home">
+        <a href="index.html">HEM</a>
+      </div>
+      <div class="menu-item">
+        <a href="tickets.html">BILJETTER</a>
+      </div>
+      <div class="menu-item" id="menu-item-agelimit">
+        <a href="agelimit.html">ÅLDERSGRÄNS</a>
+      </div>
+    </div>
+    <main>
+      <div class="sidebar">
+        <h3>ALLA FILMER:</h3>
+        <div class="all-movies">
+          <p>
+            <a href="movies/after-ever-happy.html">DÄR KRÄFTORNA SJUNGER</a>
+          </p>
+          <p>
+            <a href="movies/after-ever-happy.html">AFTER EVER HAPPY</a>
+          </p>
+          <p>
+            <a href="movies/beast.html">BEAST</a>
+          </p>
+          <p>
+            <a href="movies/downton-abbey.html">DOWNTON ABBEY: EN NY ERA</a>
+          </p>
+          <p>
+            <a href="movies/elvis.html">ELVIS</a>
+          </p>
+        </div>
+      </div>
+      <div id="movies">
+        <article class="thumbnail-movie">
+          <h2>AFTER EVER HAPPY</h2>
+          <div class="movie-info-list">
+            <div class="movie-info-genres">Drama, Romantik</div>
+            <div class="movie-info-time">1 tim 55 min</div>
+            <div class="movie-info-age">11 år</div>
+          </div>
+          <a href="movies/after-ever-happy.html">
+            <img
+              src="img/After_ever_happy.jpg"
+              class="movie-cover"
+              alt="After ever happy"
+            />
+          </a>
+        </article>
+        <article class="thumbnail-movie">
+          <h2>DÄR KRÄFTORNA SJUNGER</h2>
+          <div class="movie-info-list">
+            <div class="movie-info-genres">Drama, Mysterium</div>
+            <div class="movie-info-time">2 tim 5 min</div>
+            <div class="movie-info-age">11 år</div>
+          </div>
+          <a href="movies/dar-kraftorna-sjunger.html">
+            <img
+              src="img/dar-kraftorna-sjunger.jpg"
+              class="movie-cover"
+              alt="Där kräftorna sjunger"
+            />
+          </a>
+        </article>
+        <article class="thumbnail-movie">
+          <h2>BEAST</h2>
+          <div class="movie-info-list">
+            <div class="movie-info-genres">Äventyr, Skräck</div>
+            <div class="movie-info-time">1 tim 32 min</div>
+            <div class="movie-info-age">15 år</div>
+          </div>
+          <a href="movies/beast.html">
+            <img src="img/beast.jpg" class="movie-cover" alt="beast" />
+          </a>
+        </article>
+        <article class="thumbnail-movie">
+          <h2>DOWNTON ABBEY: EN NY ERA</h2>
+          <div class="movie-info-list">
+            <div class="movie-info-genres">Drama, Romantik</div>
+            <div class="movie-info-time">2 tim 5 min</div>
+            <div class="movie-info-age">Barntillåten</div>
+          </div>
+          <a href="movies/downton-abbey.html">
+            <img
+              src="img/downton-abbey.jpg"
+              class="movie-cover"
+              alt="Downton abbey: en ny era"
+            />
+          </a>
+        </article>
+        <article class="thumbnail-movie">
+          <h2>ELVIS</h2>
+          <div class="movie-info-list">
+            <div class="movie-info-genres">Biografi, Drama, Musik</div>
+            <div class="movie-info-time">2 tim 39 min</div>
+            <div class="movie-info-age">11 år</div>
+          </div>
+          <a href="movies/elvis.html">
+            <img src="img/elvis.jpg" class="movie-cover" alt="Elvis" />
+          </a>
+        </article>
+      </div>
+    </main>
+  </body>
 </html>
