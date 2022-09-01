@@ -1,3 +1,8 @@
+const elAcceptTermsButton = document.querySelector("#accept-terms-button");
+const elMovieContainer = document.querySelector("#container");
+const elShowsContainer = document.querySelector("#containerForShows");
+const elTicketForm = document.querySelector("#ticketForm");
+
 function showMovies(event) {
   event.preventDefault();
 
@@ -129,16 +134,7 @@ function showOrder(event) {
   window.location.replace("../ticketconfirmation.html");
 }
 
-document
-  .querySelector("#accept-terms-button")
-  .addEventListener("click", showMovies);
-
-document
-  .querySelector("#container")
-  .addEventListener("change", createSelectShow);
-
-document
-  .querySelector("#containerForShows")
-  .addEventListener("change", viewNumberOfTicketsInput);
-
-document.querySelector("#ticketForm").addEventListener("submit", showOrder);
+elAcceptTermsButton.addEventListener("click", showMovies);
+elMovieContainer.addEventListener("change", createSelectShow);
+elShowsContainer.addEventListener("change", viewNumberOfTicketsInput);
+elTicketForm.addEventListener("submit", showOrder);
